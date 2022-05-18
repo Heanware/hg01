@@ -4,9 +4,9 @@ class databaseConnector{
 		$config = array(
 			'db' => array(
 				'server' => 'localhost',
-				'username' => 'hg_01company_usr',
-				'password' => 'JlPbpXAyxhTt150U',
-				'name' => 'hg_01company__db',
+				'username' => 
+				'password' => 
+				'name' => 
 			),
 		);
 		$connection = mysqli_connect(

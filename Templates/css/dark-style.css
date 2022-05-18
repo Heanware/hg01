@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	outline:0px;
+}
+input{
+	padding: 2px 5px;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+textarea{
+	resize: none;
+	overflow-y: none;
+	padding: 10px;
+	font-size: 12px;
+	font-family: 'Roboto';
+	white-space: pre-wrap;
+}
+/* MODIFICATORS */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after{
+	background-color: white;
+}
+.menu__box{
+	background-color: black;
+}
+.menu__item{
+	color: white;
+	background-color: #000;
+}
+.menu__item:hover {
+	background: white;
+	color: black;
+}
+.links{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 200px;
+}
+.links > a{
+	color: white;
+}
+.links-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 200px;
+}
+.links-wrapper > a{
+	color: white;
+}
+.links a{
+	text-decoration: none;
+	outline:none;
+
+	font-family: 'Comfortaa';
+	font-size: 32px;
+}
+body{
+	background-image: url("/Templates/img/helix.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.white{
+	color: white !important;
+}
+.parallax-slider{
+	width: 2100px;
+	height: 1700px;
+}
+.fa-pencil{
+	color: black;
+}
+.fa-pencil:before{
+	position: absolute;
+}
+/* TEMPLATE VIEW */
+.success, .fail{
+	color: white;
+	font-family: 'Comfortaa';
+	font-size: 32px;
+}
+/* DROPDOWN MENU */
+
+nav {
+	text-align: center;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav a {
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+.topmenu > li {
+	display: inline-block;
+	position: relative;
+}
+.topmenu > li > a {
+	position: relative;
+	padding: 10px 15px;
+	font-family: 'Comfortaa';
+	font-size: 32px;
+	background-color: transparent;
+	line-height: 1;
+	letter-spacing: 3px;
+}
+.submenu {
+	position: absolute;
+	z-index: 4;
+	left: 50%;
+	top: 100%;
+	width: 200px;
+	padding: 15px 0 15px;
+	margin-top: 5px;
+	background: black;
+	border-radius: 5px;
+	box-shadow: 0 0 30px rgba(0,0,0,.2);
+	box-sizing: border-box;
+	visibility: hidden;
+	opacity: 0;
+	transform: translate(-50%, 20px);
+	transition: .3s;
+}
+.topmenu > li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(-50%, 0);
+}
+.submenu a {
+	font-family: 'Comfortaa';
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 5px 10px;
+	transition: .2s linear;
+	color: white;
+}
+.submenu a:hover {
+	background: #e8e8e8;
+	color: black;
+}
+/* SINGLE POST */
+
+
+.post-body{
+	margin:auto;
+	padding: 0px 0px 100px 0px;
+	background-color: transparent;
+}
+.post-text{
+	font-size: 20px;
+	padding: 10px 20px;
+}
+
+/* BOARD WITH ALL POSTS */
+
+.board-info{
+	display: flex;	
+	background: rgba(0, 0, 0, 0.5);
+	font-family: 'Comfortaa';
+}
+.board-title{
+	width: 20%;
+	text-align: center;
+}
+.board-category{
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-right: 1px solid black;
+	transition: 0.3s;
+}
+.board-category a{
+	display: block;
+}
+.board-category:hover{
+	background-color: #8bb6ff;
+	color: black !important;
+}
+.board-post-all{
+	text-align: center;
+}
+.board-games{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-around;
+	padding: 20px 10px;
+	min-height: 800px;
+}
+.board-game{
+	border-color: white;
+}
+.games-info{
+	padding:0px;
+}
+/* BEST PLAYERS PART */
+.bestplayers{
+	text-align: center;
+	font-family: 'Comfortaa';
+	text-transform: uppercase;
+	color: white;
+}
+.best-players{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	flex-wrap: wrap;
+}
+.best-player{
+	padding: 20px 10px;
+	height: 150px;
+	background: rgba(0,0,0, 0.3);
+}
+.player{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-around;
+	text-align:center;
+	font-family: 'Roboto';
+	color: white;
+}
+
+
+/* USER LOGIN PAGE */
+.user-login{
+	height: 100vh;
+	align-items: center;
+	background-color: black;
+}
+.user-login-wrap{
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	margin: auto;
+	color: white;
+	font-family: 'Comfortaa';
+	font-weight: 600;
+}
+.user-login-wrap input{
+	margin-bottom: 10px;	
+}
+.user-login form{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	bottom: 0;
+	right: 0;
+	text-align:center;
+}
+/* USER CABINET */
+.cabinet{
+	color: white;
+}
+/* ADMIN PANEL */
+.admin-panel-tables{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 100px;
+	min-height: 700px;
+}
+.admin-posts-tables > div > table > tbody > tr > th{
+	text-align: center;
+}
+.admin-panel-tables > div > table{
+	border: 2px solid red;
+	color: red;
+	font-size: 18px;
+	font-family: 'Roboto';
+}
+.admin-panel-tables > div > table  tbody td{
+	border: 2px solid white;
+	padding:10px;
+}
+.inputs{
+	width: 100%;
+}
+/* FRIENDS PAGE */
+.friends{
+	color: white;
+}
+.friends i:hover{
+	color: red;
+	transition: 0.5s;
+}
+.avatar{
+	display: flex;
+	position: relative;
+}
+.currently{
+	width: 80%;
+	line-height: 25px;
+	padding-left: 10px;
+}
+.actions span{
+	border: 1px solid white;
+	padding: 5px;
+	margin-right: 10px;
+	transition: 0.5s;
+}
+.actions span:hover{
+	background-color: white;
+	color: black;
+
+}
+.status{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/* TRANSFER PAGE */
+.transfer{
+	color: white;
+}
+/* HISTORY PAGE */
+.history{
+	color: white;
+}
+.history table tr th{
+	border-color: white;
+}
+.history table tr:hover td{
+	background: #8bb6ff;
+}
+/* CHAT */
+#fastChat{
+	background-color: transparent;
+	border: 1px solid white;
+}
+.chat{
+	background: rgba(0,0,0, 0.7);
+	border: 2px solid white;
+	border-radius: 2%;
+}
+.sender{
+	color: green;
+}
+.taker{
+	color: red;
+}
+/* FEEDBACK */
+.feedback-main h1{
+	color: white;
+}
+.feedback-form > input:last-child{
+	background-color: white;
+	color: black;
+}
+.feedback-form > input:last-child:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 0px;
+	border: 3px solid white;
+}
+.feedback-text{
+	background: rgba(255,255,255,0.7);
+}
+/* GAME ROACH LOBBY*/
+
+.betbutton{
+	background-color: transparent;
+	border: 3px solid white;
+	color: white;
+	opacity: 0.9;
+}
+.gamesRequests > h3{
+	color: white;
+}
+.betbutton:hover{
+	background-color: white;
+	color: black;
+}
+.gameReqTop{
+	border:none;
+	box-shadow: inset 0 20px 47px 18px rgba(0,0,0,.2);
+	background-color: transparent;
+}
+.gameReq{
+	box-shadow: 0 30px 10px 0px rgba(0,0,0,.2);
+	border:none;
+	color: white;
+	transition: 0.5s;
+}
+.gameReq:hover{
+	box-shadow: 0 30px 20px 10px rgba(0,0,0,.4);
+	background-color: transparent;
+}
+.join{
+	background-color: white;
+	opacity: 0.9;
+}
+/* BALANCE */
+.balance-form{
+	background-color: white;
+}
+/* FOOTER */
+footer{
+	width: 100%;
+	padding: 20px 0px;
+	background: rgba(0,0,0, 0.8);
+	text-align: center;
+	font-size: 26px;
+	color: white;
+	font-family: 'Roboto';
+}
